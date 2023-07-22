@@ -7,7 +7,8 @@ non_categorical = ['Year_Birth','Income', 'Dt_Customer', 'Recency','MntWines','M
                    'MntFishProducts','MntSweetProducts','MntGoldProds','NumDealsPurchases',
                    'NumWebPurchases','NumCatalogPurchases','NumStorePurchases','NumWebVisitsMonth']
 
-app = dash.Dash(__name__)
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, server=server)
 
 year_birth = pio.read_json('Year_Birth.json')
 income = pio.read_json('Income.json')
