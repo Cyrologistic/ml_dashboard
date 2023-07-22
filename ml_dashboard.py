@@ -2,6 +2,7 @@ import dash
 from dash import dcc
 from dash import html
 import plotly.io as pio
+import flask
 
 non_categorical = ['Year_Birth','Income', 'Dt_Customer', 'Recency','MntWines','MntFruits','MntMeatProducts',
                    'MntFishProducts','MntSweetProducts','MntGoldProds','NumDealsPurchases',
