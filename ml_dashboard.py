@@ -48,7 +48,7 @@ lime = "lime.png"
 lime_src = app.get_asset_url(lime)
 lime_image = html.Img(src=lime_src)
 
-learning_curve = "learning_curve.png"
+learning_curve = "Learning_Curve.png"
 learning_src = app.get_asset_url(learning_curve)
 learning_image = html.Img(src=learning_src)
 
