@@ -72,13 +72,43 @@ app.layout = html.Div([
     dcc.Graph(figure=numstorepurchases),
     dcc.Graph(figure=numwebvisitsmonth),
     html.H2('Model Evaluation'),
-    html.Div([logistic_image]),
-    html.Div([decision_image]),
-    html.Div([xgb_image]),
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [logistic_image]),
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [decision_image]),
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [xgb_image]),
     html.H2('Model Insights'),
-    html.Div([feature_image]),
-    html.Div([lime_image]),
-    html.Div([learning_image])
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [feature_image]),
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [lime_image]),
+    html.Div(
+        style={
+        'text-align': 'center',
+        'margin': 'auto'
+        },
+        children = [learning_image])
 ])
 
 # run the app
